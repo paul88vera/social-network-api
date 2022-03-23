@@ -1,0 +1,25 @@
+{
+  "name": "social-network-api",
+  "description": "",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paul88vera/social-network-api.git"
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "mongoose": "^6.2.8"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "paulvera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paul88vera/social-network-api/issues"
+  },
+  "homepage": "https://github.com/paul88vera/social-network-api#readme"
+}
