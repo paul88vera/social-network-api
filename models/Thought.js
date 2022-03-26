@@ -10,6 +10,7 @@ const reactionSchema = new Schema(
     reactionBody: {
       type: String,
       required: "You need to provide a reaction!",
+      minlength: 1,
       maxlength: 280,
     },
     username: {
@@ -24,36 +25,37 @@ const reactionSchema = new Schema(
   },
   {
     toJSON: {
+      virtuals: true,
       getters: true,
     },
+    id: false,
   }
 );
 
 const ThoughtSchema = new Schema(
   {
+    username: {
+      type: String,
+      required: "You need to provide a username",
+    },
     thoughtText: {
       type: String,
       required: "You need to provide a thought!",
       minlength: 1,
       maxlength: 280,
     },
+    reactions: [reactionSchema],
     createdAt: {
       type: Date,
       default: Date.now,
       get: (createdAtVal) => dateFormat(createdAtVal),
     },
-    username: {
-      type: String,
-      required: "You need to provide a username",
-    },
-    reactions: [reactionSchema],
   },
   {
     toJSON: {
       virtuals: true,
       getters: true,
     },
-    id: false,
   }
 );
 
