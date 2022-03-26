@@ -13,7 +13,7 @@ Social Network API is a backend only API for use in a social media app. It can b
 
 ## Installation
 
-[Walkthrough Video]()
+[Walkthrough Video](https://drive.google.com/file/d/1rkBYNCofITGtGmO6vWTGVvau116SETJf/view)
 
 Install these packages before running the application:
 
